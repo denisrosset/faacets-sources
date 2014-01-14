@@ -1,0 +1,94 @@
+ M_A= 4   M_B= 4
+ Bell coefficients, M_A lines, M_B columns:
+       | -3 -3 -1  0
+   -----------------
+    -3 |  1  3  2  2
+    -3 |  3  0 -3  3
+    -1 |  2 -3  2 -1
+     0 |  2  3 -1 -5
+
+ Classical limit=  0.
+
+-----------------------------------------------
+
+ Limit with real qubits without degenerate measurements:  0.70180458
+
+ Vector (Schmidt coefficients)  0.72542741  0.68829868
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.9344093-0.2475653
+-0.2475653 0.0655907
+ 2
+ 0.9996591-0.0184597
+-0.0184597 0.0003409
+ 3
+ 0.0222464 0.1474840
+ 0.1474840 0.9777536
+ 4
+ 0.7432787 0.4368243
+ 0.4368243 0.2567213
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.9344094 0.2475651
+ 0.2475651 0.0655906
+ 2
+ 0.9996591 0.0184596
+ 0.0184596 0.0003409
+ 3
+ 0.0222464-0.1474840
+-0.1474840 0.9777536
+ 4
+ 0.7432787-0.4368243
+-0.4368243 0.2567213
+
+-----------------------------------------------
+
+ Limit with real qubits allowing degenerate measurements:  1.01300800
+
+ Vector (Schmidt coefficients)  0.70710678  0.70710678
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 0 1
+ 1
+ 0.9999610-0.0062482
+-0.0062482 0.0000390
+ 2
+ 0.9364991 0.2438617
+ 0.2438617 0.0635009
+ 3
+ 0.0000000 0.0000000
+ 0.0000000 0.0000000
+ 4
+ 0.6644941-0.4721670
+-0.4721670 0.3355059
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 0 1
+ 1
+ 0.9973986-0.0509379
+-0.0509379 0.0026014
+ 2
+ 0.9057649-0.2921554
+-0.2921554 0.0942351
+ 3
+ 0.0000000 0.0000000
+ 0.0000000 0.0000000
+ 4
+ 0.7173853 0.4502706
+ 0.4502706 0.2826147
+
+
+-----------------------------------------------
+
+ Best value,    real qubits with  degenerate measurement(s):  1.01300800
+
+-----------------------------------------------
+
+ Upper limits (value, difference)
+
+ Level 1 +ab            :    1.013008    0.000000
+ Limit reached, maximum value is known

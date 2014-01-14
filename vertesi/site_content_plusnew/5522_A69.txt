@@ -1,0 +1,109 @@
+ M_A= 5   M_B= 5
+ Bell coefficients, M_A lines, M_B columns:
+       |  0 -1 -1 -1 -1
+   --------------------
+     0 | -1 -1 -1  1  0
+     0 | -1 -1  1 -1  1
+    -1 |  1  1 -1  1  1
+     0 | -1  1  0  0  0
+    -2 |  0  0  2  2  0
+
+ Classical limit=  0.
+
+-----------------------------------------------
+
+ Limit with real qubits without degenerate measurements:  0.33038846
+
+ Vector (Schmidt coefficients)  0.76136784  0.64832015
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1 1
+ 1
+ 0.2192411 0.4137323
+ 0.4137323 0.7807589
+ 2
+ 0.0194687-0.1381653
+-0.1381653 0.9805313
+ 3
+ 0.9688786-0.1736458
+-0.1736458 0.0311214
+ 4
+ 0.3057965-0.4607440
+-0.4607440 0.6942035
+ 5
+ 0.2678058 0.4428158
+ 0.4428158 0.7321942
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1 1
+ 1
+ 0.9999798 0.0044995
+ 0.0044995 0.0000202
+ 2
+ 0.8491998-0.3578540
+-0.3578540 0.1508002
+ 3
+ 0.0378679 0.1908766
+ 0.1908766 0.9621321
+ 4
+ 0.6109474 0.4875353
+ 0.4875353 0.3890526
+ 5
+ 0.4810859-0.4996421
+-0.4996421 0.5189141
+
+-----------------------------------------------
+
+ Limit with real qubits allowing degenerate measurements:  0.60961032
+
+ Vector (Schmidt coefficients)  0.71839884  0.69563144
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 0 1 1 1 1
+ 1
+ 0.0000000 0.0000000
+ 0.0000000 0.0000000
+ 2
+ 0.0230314 0.1500032
+ 0.1500032 0.9769686
+ 3
+ 0.9769695 0.1500004
+ 0.1500004 0.0230305
+ 4
+ 0.5000012 0.5000000
+ 0.5000000 0.4999988
+ 5
+ 0.5000021 0.5000000
+ 0.5000000 0.4999979
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1 1
+ 1
+ 0.9412619-0.2351338
+-0.2351338 0.0587381
+ 2
+ 0.9412635 0.2351309
+ 0.2351309 0.0587365
+ 3
+ 0.1547846 0.3616992
+ 0.3616992 0.8452154
+ 4
+ 0.8452178 0.3616970
+ 0.3616970 0.1547822
+ 5
+ 0.5000017 0.5000000
+ 0.5000000 0.4999983
+
+
+-----------------------------------------------
+
+ Best value,    real qubits with  degenerate measurement(s):  0.60961032
+
+-----------------------------------------------
+
+ Upper limits (value, difference)
+
+ Level 1 +ab            :    0.612933    0.003322
+ Level 2                :    0.609725    0.000115
+ Level 2 +aab           :    0.609610    0.000000
+ Limit reached, maximum value is known

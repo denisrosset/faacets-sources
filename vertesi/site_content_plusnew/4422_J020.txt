@@ -1,0 +1,96 @@
+ M_A= 4   M_B= 4
+ Bell coefficients, M_A lines, M_B columns:
+       | -2 -1  0  0
+   -----------------
+    -4 |  2  1  1  3
+    -2 |  2  0  2 -2
+     0 |  1  1 -1 -1
+     0 |  1 -1 -1  0
+
+ Classical limit=  0.
+
+-----------------------------------------------
+
+ Limit with real qubits without degenerate measurements:  0.53555030
+
+ Vector (Schmidt coefficients)  0.73893492  0.67377680
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.7080890 0.4546416
+ 0.4546416 0.2919110
+ 2
+ 0.1727775 0.3780548
+ 0.3780548 0.8272225
+ 3
+ 0.0287702 0.1671601
+ 0.1671601 0.9712298
+ 4
+ 0.1874194-0.3902478
+-0.3902478 0.8125806
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.2282230 0.4196871
+ 0.4196871 0.7717770
+ 2
+ 0.5016944 0.4999971
+ 0.4999971 0.4983056
+ 3
+ 0.6296983 0.4828854
+ 0.4828854 0.3703017
+ 4
+ 0.9849864 0.1216065
+ 0.1216065 0.0150136
+
+-----------------------------------------------
+
+ Limit with real qubits allowing degenerate measurements:  0.59324700
+
+ Vector (Schmidt coefficients)  0.73020325  0.68322999
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 0
+ 1
+ 0.9432947 0.2312787
+ 0.2312787 0.0567053
+ 2
+ 0.2454907 0.4303777
+ 0.4303777 0.7545093
+ 3
+ 0.4112212 0.4920552
+ 0.4920552 0.5887788
+ 4
+ 0.0000000 0.0000000
+ 0.0000000 0.0000000
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 2 1
+ 1
+ 0.5875083 0.4922827
+ 0.4922827 0.4124917
+ 2
+ 0.7204408 0.4487826
+ 0.4487826 0.2795592
+ 3
+ 1.0000000 0.0000000
+ 0.0000000 1.0000000
+ 4
+ 0.9732283-0.1614155
+-0.1614155 0.0267717
+
+
+-----------------------------------------------
+
+ Best value,    real qubits with  degenerate measurement(s):  0.59324700
+
+-----------------------------------------------
+
+ Upper limits (value, difference)
+
+ Level 1 +ab            :    0.599532    0.006285
+ Level 2                :    0.593263    0.000016
+ Level 2 +aab           :    0.593247    0.000000
+ Limit reached, maximum value is known

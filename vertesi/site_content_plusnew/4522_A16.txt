@@ -1,0 +1,106 @@
+ M_A= 4   M_B= 5
+ Bell coefficients, M_A lines, M_B columns:
+       |  0 -1  0 -1 -1
+   --------------------
+     0 | -1 -1 -1  1  0
+     0 | -1  1 -1 -1  1
+    -1 | -1  0  1  1  1
+    -1 |  1  1  0  1  0
+
+ Classical limit=  0.
+
+-----------------------------------------------
+
+ Limit with real qubits without degenerate measurements:  0.41603614
+
+ Vector (Schmidt coefficients)  0.72851903  0.68502556
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.4589950 0.4983158
+ 0.4983158 0.5410050
+ 2
+ 0.0208646 0.1429310
+ 0.1429310 0.9791354
+ 3
+ 0.7691094 0.4214026
+ 0.4214026 0.2308906
+ 4
+ 0.7798310-0.4143605
+-0.4143605 0.2201690
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1 1
+ 1
+ 0.6516937-0.4764337
+-0.4764337 0.3483063
+ 2
+ 0.3805371-0.4855189
+-0.4855189 0.6194629
+ 3
+ 0.9803058-0.1389471
+-0.1389471 0.0196942
+ 4
+ 0.9694665 0.1720500
+ 0.1720500 0.0305335
+ 5
+ 0.3253125 0.4684915
+ 0.4684915 0.6746875
+
+-----------------------------------------------
+
+ Limit with real qubits allowing degenerate measurements:  0.44616724
+
+ Vector (Schmidt coefficients)  0.71726217  0.69680340
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 0 1 1 1
+ 1
+ 0.0000000 0.0000000
+ 0.0000000 0.0000000
+ 2
+ 0.5715241 0.4948579
+ 0.4948579 0.4284759
+ 3
+ 0.9978506 0.0463120
+ 0.0463120 0.0021494
+ 4
+ 0.8627492-0.3441119
+-0.3441119 0.1372508
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1 1
+ 1
+ 0.3788031-0.4850890
+-0.4850890 0.6211969
+ 2
+ 0.9723728 0.1639023
+ 0.1639023 0.0276272
+ 3
+ 0.8445387-0.3623438
+-0.3623438 0.1554613
+ 4
+ 0.8495340-0.3575276
+-0.3575276 0.1504660
+ 5
+ 0.8624879 0.3443872
+ 0.3443872 0.1375121
+
+
+-----------------------------------------------
+
+ Best value,    real qubits with  degenerate measurement(s):  0.44616724
+
+-----------------------------------------------
+
+ Upper limits (value, difference)
+
+ Level 1 +ab            :    0.481365    0.035198
+ Level 2                :    0.466818    0.020651
+ Level 2 +aab           :    0.457107    0.010940
+  ez itt nincsen
+ Level 2 +aab+abb       :  100.000000   99.553833
+  ez itt nincsen
+ Level 3 +aab+abb+aaa   :  100.000000   99.553833
+ Limit has not been reached

@@ -1,0 +1,60 @@
+ M_A= 4   M_B= 4
+ Bell coefficients, M_A lines, M_B columns:
+       | -3 -2  0 -1
+   -----------------
+     0 |  2  2 -1 -1
+    -1 |  0  1 -1  2
+    -3 |  1  2  2  1
+    -1 |  2 -3  1  1
+
+ Classical limit=  0.
+
+-----------------------------------------------
+
+ Limit with real qubits without degenerate measurements:  0.68487260
+
+ Vector (Schmidt coefficients)  0.72481037  0.68894842
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.0161295-0.1259734
+-0.1259734 0.9838705
+ 2
+ 0.1488707-0.3559610
+-0.3559610 0.8511293
+ 3
+ 0.4362441-0.4959185
+-0.4959185 0.5637559
+ 4
+ 0.8799173-0.3250582
+-0.3250582 0.1200827
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.3959621-0.4890564
+-0.4890564 0.6040379
+ 2
+ 0.0134290-0.1151027
+-0.1151027 0.9865710
+ 3
+ 0.9001173-0.2998435
+-0.2998435 0.0998827
+ 4
+ 0.5436455-0.4980914
+-0.4980914 0.4563545
+
+
+-----------------------------------------------
+
+ Best value,    real qubits without degenerate measurements:  0.68487260
+
+-----------------------------------------------
+
+ Upper limits (value, difference)
+
+ Level 1 +ab            :    0.695623    0.010751
+ Level 2                :    0.687942    0.003069
+ Level 2 +aab           :    0.684873    0.000000
+ Limit reached, maximum value is known

@@ -1,0 +1,132 @@
+ M_A= 4   M_B= 4
+ Bell coefficients, M_A lines, M_B columns:
+       | -4 -1 -1  0
+   -----------------
+    -2 |  2  1 -2  2
+     0 |  2  1 -2 -3
+    -2 |  2  1  2  1
+     0 |  2 -2  1 -1
+
+ Classical limit=  0.
+
+-----------------------------------------------
+
+ Limit with real qubits without degenerate measurements:  0.54426145
+
+ Vector (Schmidt coefficients)  0.73269691  0.68055509
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.5676740 0.4953991
+ 0.4953991 0.4323260
+ 2
+ 0.9558674 0.2053896
+ 0.2053896 0.0441326
+ 3
+ 0.1699267 0.3755684
+ 0.3755684 0.8300733
+ 4
+ 0.9322770-0.2512700
+-0.2512700 0.0677230
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.8026592 0.3979918
+ 0.3979918 0.1973408
+ 2
+ 0.2949720 0.4560302
+ 0.4560302 0.7050280
+ 3
+ 0.0805972-0.2722156
+-0.2722156 0.9194028
+ 4
+ 0.0512962 0.2206013
+ 0.2206013 0.9487038
+
+-----------------------------------------------
+
+ Limit with real qubits allowing degenerate measurements:  0.79310307
+
+ Vector (Schmidt coefficients)  0.71825020  0.69578492
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+ 0.0073280 0.0852897
+ 0.0852897 0.9926720
+ 2
+ 0.5717196 0.4948296
+ 0.4948296 0.4282804
+ 3
+ 0.0438956 0.2048628
+ 0.2048628 0.9561044
+ 4
+ 0.8097283 0.3925154
+ 0.3925154 0.1902717
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 0 1
+ 1
+ 0.2828833 0.4504002
+ 0.4504002 0.7171167
+ 2
+ 0.0000000-0.0000160
+-0.0000160 1.0000000
+ 3
+ 0.0000000 0.0000000
+ 0.0000000 0.0000000
+ 4
+ 0.1013689-0.3018165
+-0.3018165 0.8986311
+
+
+-----------------------------------------------
+
+ Limit with complex qubits without degenerate measurements:  0.62750754
+ Note: better with real qubits with degenerate measurement
+
+ Vector (Schmidt coefficients)  0.73302974  0.68019659
+
+ Matrices of measurement operators of Alice (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+( 0.0017597, 0.0000000)  (-0.0000252,-0.0419113)
+(-0.0000252, 0.0419113)  ( 0.9982403, 0.0000000)
+ 2
+( 0.2793374, 0.0000000)  ( 0.4482668,-0.0191028)
+( 0.4482668, 0.0191028)  ( 0.7206626, 0.0000000)
+ 3
+( 0.3092009, 0.0000000)  (-0.2445396,-0.3921685)
+(-0.2445396, 0.3921685)  ( 0.6907991, 0.0000000)
+ 4
+( 0.7923284, 0.0000000)  ( 0.2032781,-0.3510301)
+( 0.2032781, 0.3510301)  ( 0.2076716, 0.0000000)
+
+ Matrices of measurement operators of Bob (in Schmidt basis)
+   dimensionalities of subspaces: 1 1 1 1
+ 1
+( 0.2169096, 0.0000000)  ( 0.1860955, 0.3677340)
+( 0.1860955,-0.3677340)  ( 0.7830904, 0.0000000)
+ 2
+( 0.0105786, 0.0000000)  (-0.0646370,-0.0793017)
+(-0.0646370, 0.0793017)  ( 0.9894214, 0.0000000)
+ 3
+( 0.8114731, 0.0000000)  (-0.2969757, 0.2545386)
+(-0.2969757,-0.2545386)  ( 0.1885269, 0.0000000)
+ 4
+( 0.2844007, 0.0000000)  (-0.4508076, 0.0170129)
+(-0.4508076,-0.0170129)  ( 0.7155993, 0.0000000)
+
+-----------------------------------------------
+
+ Best value,    real qubits with  degenerate measurement(s):  0.79310307
+
+-----------------------------------------------
+
+ Upper limits (value, difference)
+
+ Level 1 +ab            :    0.793444    0.000341
+ Level 2                :    0.793103    0.000000
+ Limit reached, maximum value is known
