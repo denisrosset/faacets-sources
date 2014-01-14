@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML lang="en">
+  <HEAD>
+    <META http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+    <TITLE>List of Bell inequalities derived by triangular elimination.</TITLE>
+    <LINK rel="stylesheet" type="text/css" href="/~tsuyoshi/style.css">
+    <LINK rel="start" href="/~tsuyoshi/">
+  </HEAD>
+  <BODY>
+    <H1>List of Bell inequalities derived by triangular elimination</H1>
+    <P>Here is a program to generate tight Bell inequalities from the list of facets of the cut polytope of the complete graph.  For background information about triangular elimination, see <A href="#ref1">[1]</A>.</P>
+    <H2>List and program</H2>
+    <P>List: <A href="from-cut8.txt">from-cut8.txt</A></P>
+    <P>Program: <A href="countbell.tar.gz">countbell.tar.gz</A></P>
+    <P>Program is written in <A href="http://caml.inria.fr/ocaml/">Objective Caml</A> and <A href="http://www.perl.org/">Perl</A>.  To run the program, you need the list <A href="#ref3">[3]</A> of facets of the cut polytope of the complete graph.  For usage of the program, see <A href="countbell/README">README</A> in the archive.</P>
+    <H2>Format of list</H2>
+    <P>Output of the program has 3 lines for each generated tight Bell inequalities.</P>
+    <BLOCKQUOTE>
+      <P class="noindent"><CODE>* (<VAR>output_number</VAR>) <- input <VAR>input_number</VAR><BR>
+        Cut <VAR>m_A</VAR> <VAR>m_B</VAR> | <VAR>n_X</VAR> <VAR>n_A</VAR> <VAR>n_B</VAR> | <VAR>a[XA<SUB>1</SUB>]</VAR> <VAR>a[XA<SUB>2</SUB>] ... <VAR>a[XA<SUB>m_A</SUB>]</VAR> <VAR>a[XB<SUB>1</SUB>]</VAR> <VAR>a[XB<SUB>2</SUB>] ... <VAR>a[XB<SUB>m_B</SUB>]</VAR> <VAR>a[A<SUB>1</SUB>B<SUB>1</SUB>]</VAR> <VAR>a[A<SUB>1</SUB>B<SUB>2</SUB>] ... <VAR>a[A<SUB>m_A</SUB>B<SUB>m_B</SUB>]</VAR> <= 0<BR>
+        Cor <VAR>m_A</VAR> <VAR>m_B</VAR> | <VAR>n_X</VAR> <VAR>n_A</VAR> <VAR>n_B</VAR> | <VAR>b[A<SUB>1</SUB>]</VAR> <VAR>b[A<SUB>2</SUB>] ... <VAR>b[A<SUB>m_A</SUB>]</VAR> <VAR>b[B<SUB>1</SUB>]</VAR> <VAR>b[B<SUB>2</SUB>] ... <VAR>b[B<SUB>m_B</SUB>]</VAR> <VAR>b[A<SUB>1</SUB>B<SUB>1</SUB>]</VAR> <VAR>b[A<SUB>1</SUB>B<SUB>2</SUB>] ... <VAR>b[A<SUB>m_A</SUB>B<SUB>m_B</SUB>]</VAR> <= 0</CODE></P>
+    </BLOCKQUOTE>
+    <P>For example, from-cut8.txt contains the following Bell inequality.</P>
+    <BLOCKQUOTE>
+      <PRE>* (40381) &lt;- input 144
+Cut 5 5 | 1 3 3 | 1 0 -1 0 0 0 -1 -1 0 0 -1 0 -1 1 0 -1 0 -1 -1 1 -1 1 0 0 -1 -1 -1 0 0 0 0 1 -1 0 0 &lt;= 0
+Cor 5 5 | 1 3 3 | 0 -1 -1 -1 0 -2 0 -2 0 0 1 0 1 -1 0 1 0 1 1 -1 1 -1 0 0 1 1 1 0 0 0 0 -1 1 0 0 &lt;= 0</PRE>
+    </BLOCKQUOTE>
+    <P>The tight Bell inequaities are numbered in the order in which they are generated.  The first line contains this number (<VAR>output_number</VAR>) as well as the number of the original facet of the cut polytope of the complete graph to which triangular elimination is applied (<VAR>input_number</VAR>).</P>
+    <P>The second line contains the coefficients of the generated Bell inequality in terms of the cut polytope of the complete tripartite graph K<SUB>1,m_A,m_B</SUB>.  It also contains information on how the nodes of the complete graph are labelled.  In the example above, the 144th facet of CUT<SUB>8</SUB> uses only 7 nodes of K<SUB>8</SUB>, and the 7 nodes are labelled so that 1(=n_X) of them is labelled as X, 3(=n_A) of them are labelled as A<SUB>i</SUB> and 3(=n_B) of them is labelled as B<SUB>j</SUB>.</P>
+    <P>The third line contains the coefficients in terms of the correlation polytope of the complete bipartite graph K<SUB>m_A,m_B</SUB>.</P>
+    <P>In the notation used in <A href="#ref2">[2]</A>, the Bell inequality above is represented as:</P>
+    <DIV style="text-align:center;"><IMG src="from-cut8-40381.png" width="261" height="125"></DIV>
+    <H2>References</H2>
+    <P class="noindent"><A id="ref1" name="ref1">[1]</A><BR>
+      D. Avis, H. Imai, T. Ito and Y. Sasaki.<BR>
+      <A href="http://www.iop.org/EJ/abstract/0305-4470/38/50/007">Two-party Bell inequalities derived from combinatorics via triangular elimination</A>.<BR>
+      <SPAN class="booktitle">Journal of Physics A: Mathematical and General</SPAN>, vol.&nbsp;38, no.&nbsp;50, pp.&nbsp;10971&ndash;10987, Dec. 2005.<BR>
+      Manuscript appeared in <A href="http://arxiv.org/abs/quant-ph/0505060">arXiv:quant-ph/0505060</A>, May 2005.  Revised in v3, Sept. 2005.</P>
+    <P class="noindent"><A id="ref2" name="ref2">[2]</A><BR>
+      D. Collins and N. Gisin.<BR>
+      <A href="http://stacks.iop.org/0305-4470/37/1775">A relevant two qubit Bell inequality inequivalent to the CHSH inequality</A>.<BR>
+      Journal of Physics A: Mathematical and General, 37(5):1775&ndash;1787, Feb. 2004.<BR>
+      Also available at <A href="http://jp.arxiv.org/abs/quant-ph/0306129">arXiv:quant-ph/0306129</A>.</P>
+    <P class="noindent"><A id="ref3" name="ref3">[3]</A><BR>
+      Research Group Discrete Optimization, University of Heidelberg.<BR>
+      <A href="http://www.iwr.uni-heidelberg.de/groups/comopt/software/SMAPO/cut/cut.html">Cut polytope</A> in <A href="http://www.iwr.uni-heidelberg.de/groups/comopt/software/SMAPO/">SMAPO&mdash;&ldquo;Small&rdquo; 0/1-Polytopes in Combinatorial Optimization</A>.</P>
+    <HR>
+    <P><A href="http://www-imai.is.s.u-tokyo.ac.jp/~tsuyoshi/">Tsuyoshi Ito</A></P>
+  </BODY>
+</HTML>
